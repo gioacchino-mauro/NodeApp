@@ -15,9 +15,9 @@ node {
 
     stage('Test image') {
         
-        app.inside {
+        /*app.inside {
             echo "Tests passed"
-        }
+        }*/
     }
 
     stage('Push image to Docker Hub') {
