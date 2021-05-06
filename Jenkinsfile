@@ -1,13 +1,13 @@
 node {
     def app
 
-    stage('Clone repository') {
+    stage('Checkout repository') {
         /* Cloning the Repository to our Workspace */
 
         checkout scm
     }
 
-    stage('Build image') {
+    stage('Docker Build image') {
         /* This builds the actual image */
 
         app = docker.build("giocchi27/nodeapp")
@@ -20,7 +20,7 @@ node {
         }
     }
 
-    stage('Push image') {
+    stage('Push image to Docker Hub') {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
 		*/
