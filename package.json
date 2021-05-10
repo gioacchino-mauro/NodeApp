@@ -18,6 +18,12 @@
   ],
   "author": "crudsinfotechng@gmail.com",
   "license": "ISC",
-  "devDependencies": { "test": ">=0.6.0" }
+  "devDependencies": {
+    "test": ">=0.6.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
-
